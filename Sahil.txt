@@ -6,6 +6,7 @@ int main()
  cout<<"Hello People";
 
  System.out.println("FInally Result");
+ cout<<"count";
 
  return 0;
 }
