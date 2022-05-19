@@ -5,8 +5,5 @@ int main()
  cout<<"Hello my name is sahil sharma";
  cout<<"Hello People";
 
- System.out.println("FInally Result");
- cout<<"count";
-
  return 0;
 }
