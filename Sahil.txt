@@ -4,8 +4,6 @@ int main()
 {
  cout<<"Hello my name is sahil sharma";
  cout<<"Hello People";
-
  cout<<"count";
-
  return 0;
 }
