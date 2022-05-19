@@ -7,4 +7,7 @@ int main()
  
  cout<<"Count";
  return 0;
+
+ cout<<"killer";
+ cout<<"Ship";
 }
