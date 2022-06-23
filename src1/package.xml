@@ -3,6 +3,10 @@
     <types>
         <members>DreamWorld</members>
 		<members>HelloWorld</members>
+		<members>DownTriangle</members>
+		<members>HelloWorldTestClass</members>
+		<members>LeftTrianglePascal</members>
+		<members>MyHelloWorld</members
         <name>ApexClass</name>
     </types>
     <types>
@@ -13,6 +17,7 @@
     <types>
         <members>Dream_World__c</members>
 		<members>HelloWorld__c</members>
+		<members>Book__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -20,5 +25,9 @@
 		<members>HelloWorld__c</members>
         <name>CustomTab</name>
     </types>
+	<types>
+		<members>*</members>
+		<name>ApexTrigger</name>
+	</types>
     <version>53.0</version>
 </Package>
