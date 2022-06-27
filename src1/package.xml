@@ -6,7 +6,8 @@
 		<members>DownTriangle</members>
 		<members>HelloWorldTestClass</members>
 		<members>LeftTrianglePascal</members>
-		<members>MyHelloWorld</members
+		<members>MyHelloWorld</members>
+		<members>PracticeDataTypesAndMethods</members>
         <name>ApexClass</name>
     </types>
     <types>
