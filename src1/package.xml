@@ -9,6 +9,11 @@
 		<members>MyHelloWorld</members>
 		<members>PracticeDataTypesAndMethods</members>
 		<members>PracticeOperators</members>
+		<members>CallByValueAndReference</members>
+        <members>Constructors</members>
+        <members>MethodOverloading</members>
+        <members>MethodOverriding</members>
+        <members>PracticeLoops</members>
         <name>ApexClass</name>
     </types>
     <types>
