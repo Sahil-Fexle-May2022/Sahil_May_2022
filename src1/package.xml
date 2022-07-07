@@ -22,7 +22,9 @@
         <members>SellerPurchaseOrder</members>
         <members>SuperClass</members>
         <members>SuperSubClass</members>
-        <members>ThisKeyword</mem
+        <members>ThisKeyword</member>
+		<members>AccountRecordInsert</members>
+		<members>MapOfCountryStateAndDistrict</members>
         <name>ApexClass</name>
     </types>
     <types>
