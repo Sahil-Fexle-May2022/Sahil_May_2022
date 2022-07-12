@@ -25,6 +25,11 @@
         <members>ThisKeyword</member>
 		<members>AccountRecordInsert</members>
 		<members>MapOfCountryStateAndDistrict</members>
+		<members>AddingAndRetrievingData</members>
+        <members>DMLSingleVSBulkOperations</members>
+        <members>ParentChildRelationship</members>
+        <members>PracticeDmlTypes</members>
+        <members>RelatingRecordsByExternalID</members>
         <name>ApexClass</name>
     </types>
     <types>
