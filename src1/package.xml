@@ -30,6 +30,7 @@
         <members>ParentChildRelationship</members>
         <members>PracticeDmlTypes</members>
         <members>RelatingRecordsByExternalID</members>
+		<members>CountryStateDataMapProcess</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -41,13 +42,35 @@
         <members>Dream_World__c</members>
 		<members>HelloWorld__c</members>
 		<members>Book__c</members>
+		<members>Country__c</members>
+		<members>District__c</members>
+		<members>State__c</members>
         <name>CustomObject</name>
     </types>
     <types>
         <members>Dream_World__c</members>
 		<members>HelloWorld__c</members>
+		<members>Country__c</members>
+		<members>District__c</members>
+		<members>State__c</members>
         <name>CustomTab</name>
     </types>
+	<types>
+		<members>Country__c-Country Layout</members>
+		<members>District__c-District Layout</members>
+		<members>State__c-State Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Country__c</members>
+		<members>State__c</members>
+		<members>District__c</members>
+		<name>SharingRules</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Profile</name>
+	</types>
 	<types>
 		<members>*</members>
 		<name>ApexTrigger</name>
