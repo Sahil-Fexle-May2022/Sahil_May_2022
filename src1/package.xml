@@ -31,11 +31,14 @@
         <members>PracticeDmlTypes</members>
         <members>RelatingRecordsByExternalID</members>
 		<members>CountryStateDataMapProcess</members>
+		<members>AccountTriggerHelper</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>Dream_World__c.Dream_World__c</members>
 		<members>HelloWorld__c.HelloField__c</members>
+		 <members>Account.Account_Type__c</members>
+        <members>Account.Email__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -45,6 +48,7 @@
 		<members>Country__c</members>
 		<members>District__c</members>
 		<members>State__c</members>
+		<members>Account</members>
         <name>CustomObject</name>
     </types>
     <types>
