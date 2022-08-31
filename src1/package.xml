@@ -32,6 +32,7 @@
         <members>RelatingRecordsByExternalID</members>
 		<members>CountryStateDataMapProcess</members>
 		<members>AccountTriggerHelper</members>
+		<members>OpportunityTriggerHelper</members>
         <name>ApexClass</name>
     </types>
     <types>
