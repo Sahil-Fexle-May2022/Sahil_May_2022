@@ -1,5 +1,6 @@
 public with sharing class CountryStateDataMapProcess {
-    Map<String, Map<String, List<String>>> mapOfCountry = new Map<String, Map<String,List<String>>>();      
+    Map<String, Map<String, List<String>>> mapOfCountry = new Map<String, Map<String,List<String>>>();  
+	//Country countries = new Country();    
     
     //In This Aggregate Result We Are Counting Total Number Of Country, States And Districts  
     public static void AggregateResult() {
@@ -53,7 +54,7 @@ public with sharing class CountryStateDataMapProcess {
         {
             System.debug('An unexpected error has occurred: ' + e.getMessage());  
         }
-    }
+    } 
     //In This Constructor We Are Filling Map Dynamically Using mapOfCountry
     public CountryStateDataMapProcess() {       
         try{   
@@ -157,7 +158,7 @@ public with sharing class CountryStateDataMapProcess {
         }
     }
     
-    Country countries = new Country();  
+     Country countries = new Country();  
     //Create JSON Logic To Serialize  The Data  
     public void CountryStateJSonGenerator(String countryName,Integer countryCode) {         
         try{
@@ -167,6 +168,8 @@ public with sharing class CountryStateDataMapProcess {
             {            
                 countries.countryName = countryName;
                 countries.countryCode = countryCode;
+                countries.states = new List<states>();
+
                 
                 List<AggregateResult> totalNumberOfState = [SELECT COUNT(Name) Total_Number_Of_States FROM State__c WHERE Country__r.Name = :countryName  Group By Country__r.Name];  
                 if (totalNumberOfState.size() > 0)
@@ -194,7 +197,8 @@ public with sharing class CountryStateDataMapProcess {
                                     Districts district = new Districts();
                                     district.districtName = districtsOfStates;                            
                                     statesOfCountry.districts.add(district);
-                                }    
+                                } 
+                                  countries.states.add(statesOfCountry);  
                             }
                             countryList[0].Country_JSON_Data__c = JSON.serialize(countries);        
                         }
@@ -211,6 +215,7 @@ public with sharing class CountryStateDataMapProcess {
     
     //Make Wrapper Class for Initilize the Data Of Country, States And District
     public class Country {
+        public List<States> states{get;set;}
         public String countryName{get;set;}
         public Integer totalNumberOfStates{get;set;}
         public Integer totalNumberOfDistricts{get;set;}
